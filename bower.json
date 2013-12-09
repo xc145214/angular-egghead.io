@@ -1,0 +1,25 @@
+{
+  "name": "angular-egghead.io",
+  "version": "0.0.1",
+  "authors": [
+    "Peter Lucak <hello@peterlucak.com>"
+  ],
+  "description": "Working My Way Through The egghead.io Series On Angular In CoffeeScript",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-mocks": "~1.2.4",
+    "angular": "~1.2.4",
+    "foundation": "~5.0.2",
+    "jquery": "~2.0.3",
+    "should": "~2.1.1",
+    "mocha": "~1.15.1"
+  }
+}

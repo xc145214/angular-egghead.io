@@ -1,0 +1,10 @@
+# CoffeeScript Only
+*.js
+*.js.map
+
+# Bower
+bower_components
+
+# Allow Karma
+!karma.conf.js
+
