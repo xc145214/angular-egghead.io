@@ -16,10 +16,14 @@
   ],
   "dependencies": {
     "angular-mocks": "~1.2.4",
-    "angular": "~1.2.4",
+    "angular": "~1.2.5",
     "foundation": "~5.0.2",
     "jquery": "~2.0.3",
     "should": "~2.1.1",
-    "mocha": "~1.15.1"
+    "mocha": "~1.15.1",
+    "angular-route": "~1.2.5"
+  },
+  "resolutions": {
+    "angular": "1.2.4"
   }
 }

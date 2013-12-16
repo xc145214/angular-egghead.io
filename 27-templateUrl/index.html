@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>27-templateUrl</title>
+	<link rel="stylesheet" href="../bower_components/foundation/css/foundation.css">
+</head>
+<body>
+
+<div ng-app="app">
+	<!-- This should be within the app, best practice is at top -->
+	<script type="text/ng-template" id="zippy.html">
+		<div>
+			<h3 ng-click="toggleContent()">{{title}}</h3>
+			<div ng-show="isContentVisible" ng-transclude></div>
+		</div>
+	</script>
+
+	<input type="text" ng-model="model.title"/>
+	<input type="text" ng-model="model.content"/>
+
+	<zippy title="{{model.title}}">
+		{{model.content}}
+	</zippy>
+
+</div>
+
+<script type="text/javascript" src="../bower_components/angular/angular.js"></script>
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
