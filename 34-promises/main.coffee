@@ -23,10 +23,10 @@ app.controller('AppCtrl', ($scope, $q) ->
 		# the return will be the parameter passed
 		# into the function of the next then() call
 		# this allows for chaining
-		return 'bow'
+		'bow'
 	).then((weapon) ->
 		alert('And my ' + weapon)
-		return 'axe'
+		'axe'
 	).then((weapon) ->
 		alert('My ' + weapon + 'as well')
 		return

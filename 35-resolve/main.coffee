@@ -5,7 +5,7 @@ app = window.app
 app.config(($routeProvider) ->
 	$routeProvider
 	.when('/', {
-		templateUrl: 'app.html'
+		templateUrl: 'view/app.html'
 		controller:	'AppCtrl'
 		# list of promises - list of things that will happen before your controller
 		# will intantiate and your template will load
@@ -24,7 +24,7 @@ app.config(($routeProvider) ->
 				#this is useful for using the $http service or anything before the
 				# controller loads and the template renders
 
-				return defer.promise
+				defer.promise
 		}
 	})
 	return

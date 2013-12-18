@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>42-componentsAndContainers</title>
+	<link rel="stylesheet" href="../bower_components/foundation/css/foundation.css">
+</head>
+<body>
+
+<div ng-app="app">
+
+	<clock timezone="EST"></clock>
+
+	<br>
+
+	<panel title="Time in PST">
+		<clock timezone="EST"></clock>
+	</panel>
+
+</div>
+
+<script type="text/javascript" src="../bower_components/angular/angular.js"></script>
+<script type="text/javascript" src="../bower_components/angular-route/angular-route.js"></script>
+<script type="text/javascript" src="../bower_components/momentjs/moment.js"></script>
+<script type="text/javascript" src="../bower_components/moment-timezone/moment-timezone.js"></script>
+<script type="text/javascript" src="../bower_components/moment-timezone/moment-timezone-data.js"></script>
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
