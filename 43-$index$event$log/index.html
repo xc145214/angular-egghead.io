@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>43-$index$event$log</title>
+	<link rel="stylesheet" href="../bower_components/foundation/css/foundation.css">
+</head>
+<body style="padding: 20px 20px">
+
+<div ng-app="app">
+
+	<!--
+		ng-repeat:
+		we can use the $index to show which iteration of a loop we are in.
+
+		NOTE: by default collections are keyed by reference which is usually
+		unique for objects but is problematic for primitive types that are
+	 	interned, as they share a reference.  Here we can use the
+	 	'track by $index' which causes the items to be keyed by their position
+	 	in the array rather than on the value (of their reference).
+	  http://docs.angularjs.org/error/ngRepeat:dupes
+
+		ng-click:
+	  print out the $event information using
+	  the $log we attached to the $rootScope
+	-->
+	<div
+			class="button"
+			ng-repeat="item in 'somewords'.split('') track by $index"
+			ng-click="$log.debug($event)"
+	>
+		{{$index + 1}}. {{item}}
+	</div>
+
+</div>
+
+<script type="text/javascript" src="../bower_components/angular/angular.js"></script>
+<script type="text/javascript" src="../bower_components/angular-route/angular-route.js"></script>
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
